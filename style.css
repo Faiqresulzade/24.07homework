@@ -176,5 +176,68 @@ margin-right: 800px;
 .right-table{
     margin: 70px;
     /* border: 1px solid green; */
+}
+.Registration{
+    border: 1px solid black;
+    height: 767px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Registration-box{
+    border: 1px solid green;
+    height: 538px;
+    width: 1110px;
+    position:absolute;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.Registration-box div{
+    position: relative;
+    text-align: center;
+}
+.Lorem-text{
+    border: 1px solid goldenrod;
+    width: 539px;
+    height: 72px;
+}
+.name-phone>input{
+    width: 255px;
+}
+.adress input{
+    width: 540px;
+}
+.register div input::placeholder{
+    color: black
+}
+.name-phone{
+    position: relative;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.text2{
+    margin-left: 26px;
+}
+.adress{
+    margin-top: 40px;
+}
+.register div input{
+    border: 1px solid transparent;
+    border-bottom: 2px solid black;
+    height: 30px;
     
+}
+.register-buttom{
+    border: 1px solid blue;
+    width: 541px;
+}
+.Registration-box-main{
+    position: relative; 
+    align-items: center;
+    justify-items: center;
+}
+.Registration-box-main div{
+    /* position: absolute; */
 }
