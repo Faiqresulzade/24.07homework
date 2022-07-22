@@ -1,0 +1,12 @@
+// Push settings file - first generated on Fri Jul 22 2022 17:12:50 GMT+0400 (GMT+04:00).
+// Note: Optional items are commented out and can be uncommented if you wish to set them.
+// Preset environments are: prod, dev, stage. Custom environments (and their colours) can be created in settings.
+{
+	"env": "default",
+	"default": {
+		"service": "[ServiceName]",
+		"options": {
+			// Add service configuration here...
+		}
+	}
+}
