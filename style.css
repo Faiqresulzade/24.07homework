@@ -4,18 +4,83 @@
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
+.picture-table{
+    background-image: url(./bgc.png);
+    /* border: 2px solid red; */
+    height: 950px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.picture-table-box{
+ border-bottom: 1px solid white;
+ height: 80px;
+ width: 1010px;
+ position: absolute;
+ top: 20px;
+ right:70px;
+}
+.navhead{
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    color: white;
+    font-size: 13px;
+    padding-top: 12px;
+}
+.navfoot{
+    border-top: 1px solid white;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.navfoot div{
+    width: 260px;
+    text-align: center;
+    padding: 7px;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+}
+.Delivery{
+    border-right: 1px solid white;
+    border-left: 1px solid white
+}
+.Collections{
+    border-right: 1px solid white;
+}
+.wine-card-box{
+    width: 400px;
+    height: 40px;
+    position: relative;
+    top: 700px;
+    left: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+.wine-card,.DEGUSTATION{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:15px;
+    padding: 23px 33px;
+    background-color:#99862A;
+    color: white;
+}
 .drink-picture img{
     width: 100%;
 } 
-.all{
+/* .all{
     border: 1px solid red;
     height: 20000px;
-}
+} */
 .old-vine{
-    margin-top:-10px;
+    margin-top:-55px;
     background-color:#282828;
     position: relative;
-    /* border: 1px solid magenta; */
     height: 860px;
     display: flex;
     align-items: center;
@@ -30,8 +95,12 @@
     align-items: center;
     
 } 
+.old-vine-line-box{
+    border-top: 1px solid white;
+    width: 160px;
+    padding-bottom: 20px;
+}
 .old-vine-box div{
-    /* border: 1px solid green; */
     margin-right: 185px;
     margin-left: 185px;
 }
@@ -44,14 +113,9 @@
 margin-top: 50px;
 margin-bottom: 60px;
 margin-left: 280px;
-
-/* text-align:right;
-width: 100px;
-height: 100px; */
 }
 .three{
 width: fit-content;
-/* border: 1px solid blue; */
 width: 160px;
 height: 160px;
 
@@ -72,7 +136,7 @@ margin-right: 800px;
     position: relative;
     display: flex;
     height: 1038px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -87,22 +151,24 @@ margin-right: 800px;
     justify-content: space-between;
 }
 .left-table{
-    /* border: 1px solid red; */
     width: 445px;
     height: 100%;
     padding-top: 60px;
 }
 .right-table{
-    /* border: 1px solid blue; */
     width: 540px;
 }
 .March-1980{
-    /* border: 1px solid burlywood; */
     width: 274px;
     height: 104px;
     font-weight: 400;
     font-size: 36px;
     line-height: 54px;
+}
+.March-1980-line{
+    border-top: 1px solid #282828;
+    width: 150px;
+    margin: 30px 0;
 }
 .Lorem{
     font-weight: 400;
@@ -110,14 +176,12 @@ margin-right: 800px;
     line-height: 21px;
 }
 .table tr td{
-    /* border: 1px solid magenta; */
     color: #282828;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 100;
 }
 .table-body{
-    /* border: 1px solid magenta; */
     height: 228px;
 
 }
@@ -150,7 +214,6 @@ margin-right: 800px;
     border-bottom: 1px solid black;
 }
 .Knowing{
-    /* border: 1px solid red; */
     margin-top: 30px;
     font-size: 12px;
     line-height: 21px;
@@ -175,23 +238,23 @@ margin-right: 800px;
 }
 .right-table{
     margin: 70px;
-    /* border: 1px solid green; */
 }
 .Registration{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 767px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #282828;
+    color: white;
 }
 .Registration-box{
-    border: 1px solid green;
+    border: 3px solid #C4C4C4;
     height: 538px;
     width: 1110px;
-    position:absolute;
     position: relative;
-    align-items: center;
+    display: flex;
     justify-content: center;
 }
 .Registration-box div{
@@ -199,9 +262,14 @@ margin-right: 800px;
     text-align: center;
 }
 .Lorem-text{
-    border: 1px solid goldenrod;
-    width: 539px;
+    /* border: 1px solid goldenrod; */
+    width: 480px;
     height: 72px;
+    position: relative;
+    left: 190px;
+    bottom: 250px;
+    color: white;
+    margin-top: -39px
 }
 .name-phone>input{
     width: 255px;
@@ -210,34 +278,136 @@ margin-right: 800px;
     width: 540px;
 }
 .register div input::placeholder{
-    color: black
+    color: white
 }
 .name-phone{
     position: relative;
-    /* display: flex;
-    justify-content: space-between; */
+    /* border: 1px solid gray; */
+    left: 190px;
+    bottom: 200px;
+    color: white;
+   background-color: #282828;
 }
 .text2{
     margin-left: 26px;
+    background-color: #282828;
+}
+.text1{
+    background-color: #282828;
 }
 .adress{
     margin-top: 40px;
+    position: relative;
+    left: 190px;
+    bottom: 200px;
+    background-color: #282828;
+}
+.adressbox{
+    background-color: #282828;
 }
 .register div input{
     border: 1px solid transparent;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid white;
     height: 30px;
-    
 }
 .register-buttom{
-    border: 1px solid blue;
+    border: 1px solid white;
     width: 541px;
+    position: relative;
+    left: 190px;
+    bottom: 160px;
+}
+.register{
+    width: fit-content;
 }
 .Registration-box-main{
-    position: relative; 
-    align-items: center;
-    justify-items: center;
+    width: fit-content;
+    position: absolute;
+    width: 900px;
 }
-.Registration-box-main div{
-    /* position: absolute; */
+.Degustation-Registration{
+    position: relative;
+    top: -335px;
+    background-color: transparent;
+    color: white;
+    font-size: 36px;
+  
+}
+.registration-img1{
+    position: relative;
+    right: 180px;
+    bottom: 60px;
+    width: 260px;
+    height: 260px;
+}
+.registration-img2{
+    position: relative;
+    bottom: 670px;
+    left: 800px;
+    width: fit-content;
+}
+.foot{
+    /* border: 1px solid black; */
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #998431;
+}
+.foottable{
+    height: 120px;
+    width: 1110px;
+    position: absolute;
+    color: white;
+    
+    ;
+}
+.headoftable{
+    border-top: 1px solid white;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.footoftable{
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    border: 1px solid transparent;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 2px;
+}
+.headoftablebox{
+    position: absolute;
+}
+.footoftable div {
+    padding: 20px 70px;
+    margin-top: -2px;
+}
+.imglogo :nth-child(2){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.number{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.imglogo{
+    border-right: 1px solid white;
+}
+.Degustation-Registration-h{
+    z-index: -1;
+    background-color: #282828;
+    width: fit-content;
+    margin-left: 180px;
+    padding: 0 50px;
+}
+.Degustation-Registration-line{
+    border-top: 1px solid white;
+    width: 118px;
+    margin-left: 370px;
 }
